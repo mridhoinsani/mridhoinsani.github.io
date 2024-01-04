@@ -1,48 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/test web/css/style.css">
+    <title>katik segitiga</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
-    <h3>Calculator</h3>
-    <div class="container">
-        <div class="container-row">
-            <input id="display" name="display" class="input"></input>
-        </div>
-        <div class="container-row">
-            <button class="btn btn-ac" onclick="btnClick(this.innerText)">AC</button>
-            <button class="btn" onclick="btnClick(this.innerText)">C</button>
-            <button class="btn" value="*" onclick="btnClick(this.innerText)">*</button>
-        </div>
-        <div class="container-row">
-            <button class="btn" value="7" onclick="btnClick(this.innerText)">7</button>
-            <button class="btn" value="8" onclick="btnClick(this.innerText)">8</button>
-            <button class="btn" value="9" onclick="btnClick(this.innerText)">9</button>
-            <button class="btn" value="/" onclick="btnClick(this.innerText)">/</button>
-        </div>
-        <div class="container-row">
-            <button class="btn" value="4" onclick="btnClick(this.innerText)">4</button>
-            <button class="btn" value="5" onclick="btnClick(this.innerText)">5</button>
-            <button class="btn" value="6" onclick="btnClick(this.innerText)">6</button>
-            <button class="btn" value="+" onclick="btnClick(this.innerText)">+</button></div>
-        <div class="container-row">
-            <button class="btn" value="1" onclick="btnClick(this.innerText)">1</button>
-            <button class="btn" value="2" onclick="btnClick(this.innerText)">2</button>
-            <button class="btn" value="3" onclick="btnClick(this.innerText)">3</button>
-            <button class="btn" value="-" onclick="btnClick(this.innerText)">-</button>
-        </div>
-        <div class="container-row">
-            <button class="btn" value="+-" onclick="btnClick(this.innerText)">+-</button>
-            <button class="btn" value="0" onclick="btnClick(this.innerText)">0</button>
-            <button class="btn" value="." onclick="btnClick(this.innerText)">.</button>
-            <button class="btn" value="=" onclick="btnClick(this.innerText)">=</button>
-        </div>
+    <header id="nav-bar">
+        <h1> Katik Segitiga</h1>
+    </header>
+
+    <div class="div-tabel">
+        <!--luas segitiga-->
+        <section class="section-tabel">
+            <label for="" id="luas-segitiga" class="label-tabel">Hitung Luas Segitiga</label>
+            <div class="keterangansegitiga">
+                <p class="keterangan">keterangan</p>
+                <p>L = luas</p>
+                <p>a = panjang alas</p>
+                <p>t = tinggi</p>
+            </div>
+
+            <form class="input" id="inputLuas">
+                <input type="number" id="input-alas" class="katik-input" placeholder="alas">
+                <input type="number" id="input-tinggi" class="katik-input" placeholder="tinggi">
+            </form>
+
+            <div class="buttons">
+                <button class="tombol" onclick="hitungLuas()">hitung</button>
+                <input type="button" class="tombol" onclick="resetLuas()" value="Reset">
+            </div>
+
+            <div id="keluaranLuas" class="keluaranHasil"></div>
+
+            <div class="rumus">
+                <p>Rumus</p>
+                <p>L = 1/2 x a x t</p>
+                <a href="https://www.youtube.com/" class="navigation">
+                    <button class="tombol">penjelasan</button>
+                </a>
+            </div>
+        </section>
+
+        <!--keliling segitiga-->
+        <section class="section-tabel">
+            <label for="" id="keliling-segitiga" class="label-tabel">Hitung Keliling Segitiga</label>
+            <div class="keterangansegitiga">
+                <p class="keterangan">keterangan</p>
+                <p>K = keliling</p>
+                <p>S1 = sisi A</p>
+                <p>S2 = sisi B</p>
+                <p>S3 = sisi C</p>
+            </div>
+
+            <form class="input" id="inputKeliling">
+                <input type="number" id="input-sisi1" class="katik-input" placeholder="sisi1">
+                <input type="number" id="input-sisi2" class="katik-input" placeholder="sisi2">
+                <input type="number" id="input-sisi3" class="katik-input" placeholder="sisi3">
+            </form>
+
+            <div class="buttons">
+                <button class="tombol" onclick="hitungKeliling()">hitung</button>
+                <input type="button" class="tombol" onclick="resetKeliling()" value="Reset">
+            </div>
+
+            <div id="keluaranKeliling" class="keluaranHasil"></div>
+
+            <div class="rumus">
+                <p>Rumus</p>
+                <p>K = S1 + S2 + S3</p>
+                <a href="" class="navigation">
+                    <button class="tombol">penjelasan</button>
+                </a>
+            </div>
+        </section>
     </div>
-    <script src="/test web/js/index.js"></script>
 </body>
+
 </html>

@@ -1,29 +1,24 @@
-var calDisplay = ""
-
-function btnClick(e) {
-    if (e == "1" || e == "2" || e == "3") {
-        if (e == "AC") {
-            calDisplay = ""
-        } else {
-            calDisplay = calDisplay + e
-            console.log(calDisplay)
-        }
-        document.getElementById("display").value = calDisplay
-    } else {
-        console.log("input harus angka")
-    }
+function hitungLuas() {
+    let inputAlas = document.getElementById ("input-alas").value;
+    let inputTinggi = document.getElementById ("input-tinggi").value;
+    let hasilLuas = (parseInt(inputAlas) * parseInt (inputTinggi))/2;
+    document.getElementById("keluaranLuas").innerHTML=hasilLuas;
 }
 
-document.getElementById("display").addEventListener('input', function displayChange() {
-    console.log(this.value)
-    let e = this.Value
+function hitungKeliling(){
+    let inputSisi1 = document.getElementById ("input-sisi1").value
+    let inputSisi2 = document.getElementById ("input-sisi2").value
+    let inputSisi3 = document.getElementById ("input-sisi3").value
+    let hasilKeliling = parseInt(inputSisi1) + parseInt(inputSisi2) + parseInt(inputSisi3)
+    document.getElementById("keluaranKeliling").innerHTML=hasilKeliling;
+}
 
-    let chars = /^[0-9]+$/
+function resetLuas(){
+    document.getElementById("keluaranLuas").innerHTML="";
+    document.getElementById("inputLuas").reset();
+}
 
-    if (chars.test(e)) {
-        console.log("digits")
-    } else {
-        console.log("not digits")
-    }
-})
-
+function resetKeliling(){
+    document.getElementById("keluaranKeliling").innerHTML="";
+    document.getElementById("inputKeliling").reset();
+}
