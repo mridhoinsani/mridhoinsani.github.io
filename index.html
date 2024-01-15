@@ -2,30 +2,29 @@
 <html>
 
 <head>
-    <title>katik segitiga</title>
+    <title>katik persegi</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/index.js"></script>
 </head>
 
 <body>
     <header id="nav-bar">
-        <h1> Katik Segitiga</h1>
+        <h1> Katik Persegi</h1>
     </header>
+    
 
     <div class="div-tabel">
         <!--luas segitiga-->
         <section class="section-tabel">
-            <label for="" id="luas-segitiga" class="label-tabel">Hitung Luas Segitiga</label>
-            <div class="keterangansegitiga">
+            <label for="" id="luas-persegi" class="label-tabel">Hitung Luas Persegi</label>
+            <div class="keteranganpersegi">
                 <p class="keterangan">keterangan</p>
                 <p>L = luas</p>
-                <p>a = panjang alas</p>
-                <p>t = tinggi</p>
+                <p>s = sisi</p>
             </div>
 
             <form class="input" id="inputLuas">
-                <input type="number" id="input-alas" class="katik-input" placeholder="alas">
-                <input type="number" id="input-tinggi" class="katik-input" placeholder="tinggi">
+                <input type="number" id="input-sisi-luas" class="katik-input" placeholder="masukan sisi">
             </form>
 
             <div class="buttons">
@@ -35,9 +34,11 @@
 
             <div id="keluaranLuas" class="keluaranHasil"></div>
 
-            <div class="rumus">
+            <div class="footer">
+                <div>
                 <p>Rumus</p>
-                <p>L = 1/2 x a x t</p>
+                <p>L = s x s</p>
+                </div>
                 <a href="https://www.youtube.com/" class="navigation">
                     <button class="tombol">penjelasan</button>
                 </a>
@@ -50,15 +51,11 @@
             <div class="keterangansegitiga">
                 <p class="keterangan">keterangan</p>
                 <p>K = keliling</p>
-                <p>S1 = sisi A</p>
-                <p>S2 = sisi B</p>
-                <p>S3 = sisi C</p>
+                <p>s = sisi</p>
             </div>
 
             <form class="input" id="inputKeliling">
-                <input type="number" id="input-sisi1" class="katik-input" placeholder="sisi1">
-                <input type="number" id="input-sisi2" class="katik-input" placeholder="sisi2">
-                <input type="number" id="input-sisi3" class="katik-input" placeholder="sisi3">
+                <input type="number" id="input-sisi-keliling" class="katik-input" placeholder="masukan sisi">
             </form>
 
             <div class="buttons">
@@ -68,10 +65,12 @@
 
             <div id="keluaranKeliling" class="keluaranHasil"></div>
 
-            <div class="rumus">
+            <div class="footer">
+                <div>
                 <p>Rumus</p>
-                <p>K = S1 + S2 + S3</p>
-                <a href="" class="navigation">
+                <p>K = 4 x s</p>
+                </div>
+                <a href="https://www.youtube.com/" class="navigation">
                     <button class="tombol">penjelasan</button>
                 </a>
             </div>

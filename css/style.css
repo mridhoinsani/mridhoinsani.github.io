@@ -1,6 +1,6 @@
 body {
 
-    background-image: url(./neon3.jpg);
+    background-image: url(anime.jpg);
     height: 100%;
 
     background-position: center;
@@ -8,7 +8,7 @@ body {
     background-size: cover;
 
     /*background: linear-gradient(rgb(2, 2, 69), rgb(107, 4, 136));*/
-    color: white;
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -22,26 +22,25 @@ body {
 
 #nav-bar {
     color: white;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(27, 5, 70);
+    
+    
+    background-color: rgb(22, 92, 171);
     border: 1px solid gray;
-    align-items: center;
-    width: 300px;
-    height: 150;
     border-radius: 10px;
+    text-align: center;
 }
 
 /* bagian tabel*/
 
 .label-tabel {
-    background-color: rgb(27, 5, 70);
-    align-self: center;
+    background-color: rgb(22, 92, 171);
+    text-align: center;
     border-radius: 10px;
     padding: 10px;
     display: flex;
     font-size: large;
-    border: 1px solid gray;
+    border: 1px solid rgb(112, 112, 255);
+    color: white;
 }
 
 .div-tabel {
@@ -62,14 +61,14 @@ body {
 /*bagian input*/
 .input {
     display: grid;
-    gap: 15px;
 }
 
 .katik-input {
     outline: none;
     border-radius: 10px;
-    padding: 4px;
-    border: 1px solid blueviolet;
+    padding: 5px;
+    border: 1px solid blue;
+   font-size: 25px;
 }
 
 .katik-input:focus {
@@ -84,7 +83,7 @@ body {
 }
 
 .tombol {
-    background-color: blueviolet;
+    background-color: blue;
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
@@ -93,7 +92,7 @@ body {
 }
 
 .tombol:hover {
-    background-color: rgb(41, 8, 71);
+    background-color: rgb(6, 6, 126);
 }
 
 .tombol:active {
@@ -106,9 +105,15 @@ body {
     width: auto;
     height: 40px;
     background-color: white;
-    border: 1px solid blueviolet;
+    border: 1px solid blue;
     border-radius: 10px;
     color: black;
     font-size: xx-large;
     margin: 10px;
+    padding: 5px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
 }
