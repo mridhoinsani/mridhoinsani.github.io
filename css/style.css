@@ -1,12 +1,14 @@
 body {
 
-    background-image: url(anime.jpg);
+    background-image: url(./neon3.jpg);
     height: 100%;
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
+    /*background: linear-gradient(rgb(2, 2, 69), rgb(107, 4, 136));*/
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -20,24 +22,26 @@ body {
 
 #nav-bar {
     color: white;
-    
-    background: linear-gradient(rgb(16, 16, 216), rgb(62, 119, 216));
+    display: flex;
+    justify-content: center;
+    background-color: rgb(27, 5, 70);
     border: 1px solid gray;
+    align-items: center;
+    width: 300px;
+    height: 150;
     border-radius: 10px;
-    text-align: center;
 }
 
 /* bagian tabel*/
 
 .label-tabel {
-    background-color: rgb(22, 92, 171);
-    text-align: center;
+    background-color: rgb(27, 5, 70);
+    align-self: center;
     border-radius: 10px;
     padding: 10px;
     display: flex;
     font-size: large;
-    border: 1px solid rgb(112, 112, 255);
-    color: white;
+    border: 1px solid gray;
 }
 
 .div-tabel {
@@ -58,14 +62,14 @@ body {
 /*bagian input*/
 .input {
     display: grid;
+    gap: 15px;
 }
 
 .katik-input {
     outline: none;
     border-radius: 10px;
-    padding: 5px;
-    border: 1px solid blue;
-   font-size: 25px;
+    padding: 4px;
+    border: 1px solid blueviolet;
 }
 
 .katik-input:focus {
@@ -80,7 +84,7 @@ body {
 }
 
 .tombol {
-    background-color: blue;
+    background-color: blueviolet;
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
@@ -89,7 +93,7 @@ body {
 }
 
 .tombol:hover {
-    background-color: rgb(6, 6, 126);
+    background-color: rgb(41, 8, 71);
 }
 
 .tombol:active {
@@ -102,15 +106,9 @@ body {
     width: auto;
     height: 40px;
     background-color: white;
-    border: 1px solid blue;
+    border: 1px solid blueviolet;
     border-radius: 10px;
     color: black;
     font-size: xx-large;
     margin: 10px;
-    padding: 5px;
-}
-
-.footer{
-    display: flex;
-    justify-content: space-around;
 }
