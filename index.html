@@ -4,49 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story Elaina By Ridho</title>
-    <link rel="icon" type="png/jpg" href="./asset/picture/elaina-nobg.png">
+    <title>Tebak Angka</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="logo">
-                <li><h2>Majo No Tabi Tabi</h2></li>
-                <li><h2>ZLYORY</h2></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <h1>MAJO NO TABI TABI</h1>
-            <p>artikel by RIDHO <br> ngambil dari GOOGLE</p>
-        </div>
-    </header>
-    <main>
-        <aside id="grup">
-            <h2>Elaina</h2>
-            <div class="div-gambar">
-                <img src="./asset/picture/elaina.jpg" alt="elaina" class="gambar">
+
+    <div id="page1">
+        <header class="head">
+            <div class="text">
+                <h1>Tebak Angka</h1>
+                <h2>1 - 99</h2>
             </div>
-        </aside>
-        <div class="content">
-            <article id="grup">
-                <h2>majo no tabi tabi</h2>
-                <p>Sebuah adaptasi anime telah diumumkan selama siaran langsung dalam acara "GA Fes 2019" pada tanggal 19 Oktober 2019. Seri anime ini dianimasikan oleh C2C dan disutradarai oleh Toshiyuki Kubooka. Kemudian skenario anime ini ditulis oleh Kazuyuki Fudeyasu, sementara perancangan desain karakternya dikerjakan oleh Takeshi Oda, dan musiknya disusun oleh AstroNoteS.[2][74] Seri anime ini berlangsung selama 12 episode, dan telah ditayangkan di saluran AT-X dan lainnya sejak bulan Oktober hingga Desember 2020.[75][76] Lagu tema pembuka anime ini adalah "Literature" (リテラチュア, Riterachua), yang dibawakan oleh Reina Ueda, sementara lagu tema penutupnya adalah "Haiiro no Saga" (灰色のサーガ, "Gray Saga"), yang dibawakan oleh ChouCho.[6][77]</p>
-                <br>
-                <p>Seri anime ini telah dilisensi oleh Funimation dan telah ditayangkan secara streaming di situs web mereka di Amerika Utara dan Kepulauan Inggris.[78] Kemudian AnimeLab menayangkan anime ini secara simulcast di Australia dan Selandia Baru.[79] Sementara Wakanim menayangkan anime ini secara streaming di wilayah Eropa tertentu.[80][81] Sedangkan Muse Communication menayangkan anime ini secara streaming di Asia Tenggara dan Asia Selatan.[82][83] Setelah Sony mengakuisisi Crunchyroll, seri anime ini kemudian dipindahkan ke Crunchyroll.[84] Pada tanggal 3 Desember 2020, Funimation mengumumkan bahwa seri anime ini akan menerima sulih suara bahasa Inggris yang akan ditayangkan perdana pada hari berikutnya.[3]</p>
-            </article>
-            <article id="grup">
-                <h2>Ringkasan</h2>
-                <p>Sejak kecil, Elaina selalu terpesona dengan cerita-cerita yang tertulis di buku favoritnya, terutama tentang Nike, seorang penyihir terkenal yang melakukan banyak perjalanan keliling dunia. Ingin merasakan sendiri kekaguman akan petualangan, Elaina berusaha menjadi seorang penyihir, dan meskipun banyak cobaan yang menghadangnya, dia akhirnya berhasil.</p>
-                <br>
-                <p>Kini Elaina adalah seorang penyihir sejati, akhirnya memulai perjalanan yang telah lama ditunggu-tunggu, di mana dia bertemu banyak orang di sepanjang jalan, mempelajari berbagai kisah mereka. Melalui semua ini, dia menjelajahi dunia sepenuhnya—mengalami sisi terang dan gelapnya—memulai kisah legendarisnya.</p>
-                <br>
-                <p>Terpukau oleh kisah Niké, seorang penyihir yang menjelajahi dunia, Elaina kemudian bertekad untuk melakukan hal yang serupa. Tekadnya dalam mempelajari buku dan sihir membuat Elaina menjadi penyihir termuda yang lulus dari akademi. Namun, untuk menjadi penyihir resmi dia harus menerima pelatihan dari penyihir senior, dan banyak dari para penyihir tersebut yang tidak percaya diri untuk menerimanya, karena dia memiliki bakat yang luar biasa. Begitulah hingga dia bertemu Fran, seorang "Penyihir Debu Bintang", dan ia menerimanya. Setelah Elaina mendapatkan gelarnya, "Penyihir Kelabu", dia kemudian memulai perjalanannya ke seluruh dunia, mengunjungi dan menghadapi semua jenis orang dan tempat.</p>
-            </article>
+        </header>
+    
+        <div class="body">
+            <main class="container">
+                <div class="info">
+                        <p class="textInfoPage1">klik mulai untuk bermain</p>
+                        <button href="#" onclick="mulaiGame()">MULAI !!</button>
+                        <p>pastikan paham cara bermain</p>
+                </div>
+            </main>
         </div>
-    </main>
-    <footer>
-        <p>DBS Foundation Camp &copy; 2024, Dicoding Academy</p>
-    </footer>
+        
+    
+        <footer>
+            <p>Tebak Angka &copy; 2024, Informatics Team</p>
+        </footer>
+    </div>
+
+    <!-- page 2 -->
+    <div id="page2">
+        <header class="head">
+            <div class="text">
+                <h1>Tebak Angka</h1>
+                <h2>1 - 99</h2>
+            </div>
+        </header>
+    
+        <div class="body">
+            <main class="container">
+                <div class="info">
+                    <p class="textInfo" id="textInfo">Masukan Angka</p>
+                    <input type="number" placeholder="masukan angka" class="input" id="outputscreen">
+                    <p id="sisaKesempatan">sisa kesempatan = 10</p>
+                </div>
+                <div class="tombolGame">
+                    <div class="operator">
+                        <button onclick="tebak()">TEBAK</button>
+                        <button onclick="del()">Del</button>
+                    </div>
+                    <div class="angka">
+                        <button onclick="display('7')">7</button>
+                        <button onclick="display('8')">8</button>
+                        <button onclick="display('9')">9</button>
+                        <button onclick="display('4')">4</button>
+                        <button onclick="display('5')">5</button>
+                        <button onclick="display('6')">6</button>
+                        <button onclick="display('1')">1</button>
+                        <button onclick="display('2')">2</button>
+                        <button onclick="display('3')">3</button>
+                        <button onclick="display('0')">0</button>
+                    </div>
+                    
+                </div>
+        
+            </main>
+        </div>
+        
+    
+        <footer>
+            <p>Tebak Angka &copy; 2024, Informatics Team</p>
+        </footer>
+    </div>
+
+    <!-- page 3 salah-->
+    <div id="page3">
+        <header class="head">
+            <div class="text">
+                <h1>Tebak Angka</h1>
+                <h2>1 - 99</h2>
+            </div>
+        </header>
+    
+        <div class="body">
+            <main class="container">
+                <div class="info">
+                    <p class="textInfo" id="textInfo">Yah Jawabanmu SALAH</p>
+                </div>
+                <div class="tombolGame">
+                    <img class="gambarSalah" src="asset/img/salah.jpg" alt="">
+                    <p id="jawaban"></p>
+                </div>
+        
+            </main>
+        </div>
+        
+    
+        <footer>
+            <p>Tebak Angka &copy; 2024, Informatics Team</p>
+        </footer>
+    </div>
+
+    <!-- page 4 benar -->
+    <div id="page4">
+        <header class="head">
+            <div class="text">
+                <h1>Tebak Angka</h1>
+                <h2>1 - 99</h2>
+            </div>
+        </header>
+    
+        <div class="body">
+            <main class="container">
+                <div class="infoPage4">
+                    <p class="textInfoPage4" id="textInfoPage4">hore!! Jawabanmu BENAR</p>
+                </div>
+                <div class="tombolGame">
+                    <img class="gambarBenar" src="asset/img/benar.jpg" alt="">
+                    <p id="jawabanBenar"></p>
+                </div>
+        
+            </main>
+        </div>
+        
+    
+        <footer>
+            <p>Tebak Angka &copy; 2024, Informatics Team</p>
+        </footer>
+
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

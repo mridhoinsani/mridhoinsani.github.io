@@ -1,109 +1,150 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin : 0;
+    padding: 0;
     box-sizing: border-box;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+p{
+    color: #F5F5F5;
+    size: 1em;
+}
+
+#page1{
+    display: block;
+}
+#page2{
+    display: none;
+}
+#page3{
+    display: none;
+}
+#page4{
+    display: none;
+}
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-nav{
-    background-color: #C0EA6A;
-    padding: 10px 0px 10px 0px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    width: 100%;
-}
-.logo{
-    border: 3px solid black;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    margin: 0px 50px 0px 50px;
-}
-header{
-    background-color: #FFFFFF;
+    width: 100vw;
     height: 100vh;
-    color: #313823;
-    background: rgb(239,245,210);
-    background: linear-gradient(180deg, rgba(239,245,210,1) 0%, rgba(192,234,106,1) 66%);
-}
-.header-text{
-    padding-top: 20%;
-    font-size: 30px;
-    margin-left: 30px;
+    background-color: #BEBEBE;
 }
 
-/*main view*/
-main{
-    background: #313823;
-    height: auto;
-    overflow: auto;
-    padding: 20px 20px;
+/* page 1 */
+
+.textInfoPage1{
+    color: #F5F5F5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 70px;
+    font-size: 2em;
 }
 
-.content{
+/* bagian page game */
+.head{
+    background-color: #758385;
+    height: 10vh;
+    width: 100vw;
+    color: #F5F5F5;
     
-    float: left;
-    width: 70%;
-}
-
-aside{
-    float: right;
-    width: 25%;
-    background: red;
-}
-.gambar{
-    width: 50%;
-    border-radius: 50%;
-    border: #313823 solid 3px;
-}
-.div-gambar{
-    display: flex;
-    justify-content: center;
-}
-#grup{
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background: #C0EA6A;
-    margin: 10px;
-}
-
-/*footer*/
-footer{
-    color: white;
-    background-color: black;
-}
-footer p{
-    height: 50px;
+    border-radius: 0px 0 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.text{
+    width: auto;
+    text-align: start;
+}
 
-@media(max-width: 800px){
-    nav h2{
-        font-size: 20px;
-    }
-    .header-text{
-        padding-top: 30%;
-    }
-    main{
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-    }
-    aside{
-        float: none;
-        width: auto;
-    }
-    .content{
-        float: none;
-        width: auto;
-    }
-    .grup{
-        width: auto;
-    }
+.body{
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+}
+.container{
+    width: 300px;
+    padding: 20px;
+}
+
+.info{
+    background-color: #758385;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.textInfo{
+    color: #F5F5F5;
+    margin-top: 10px;
+    height: 70px;
+    font-size: 2em;
+}
+.input{
+    text-align: end;
+    font-size: 2em;
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 20px;
+}
+.tombolGame{
+    background-color: #758385;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.operator{
+    display: flex;
+    justify-content: space-around;
+}
+.operator>button{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.angka{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3,68px);
+}
+button{
+    background-color: #D9D9D9;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border: none;
+}
+
+footer{
+    width: 100vw;
+    height: 5vh;
+    background-color: #758385;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* page 3 salah */
+.gambarSalah{
+    width: 100%;
+}
+
+/* page 4 benar*/
+.textInfoPage4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.infoPage4{
+    background-color: #758385;
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.gambarBenar{
+    width: 100%;
 }
