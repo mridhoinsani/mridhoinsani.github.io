@@ -20,24 +20,13 @@ p{
 #page3{
     display: none;
 }
-#page4{
-    display: none;
-}
+
 body{
     width: 100vw;
     height: 100vh;
     background-color: #BEBEBE;
 }
 
-/* page 1 */
-
-.textInfoPage1{
-    color: #F5F5F5;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    height: 70px;
-    font-size: 2em;
-}
 
 /* bagian page game */
 .head{
@@ -68,6 +57,7 @@ body{
 
 .info{
     background-color: #758385;
+    height: auto;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px;
@@ -76,6 +66,7 @@ body{
 .textInfo{
     color: #F5F5F5;
     margin-top: 10px;
+    margin-bottom: 10px;
     height: 70px;
     font-size: 2em;
 }
@@ -128,23 +119,13 @@ footer{
 }
 
 /* page 3 salah */
-.gambarSalah{
+.gambar{
     width: 100%;
 }
 
 /* page 4 benar*/
-.textInfoPage4{
+.textInfoEnd{
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 2em;
-}
-.infoPage4{
-    background-color: #758385;
-    height: 150px;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-.gambarBenar{
-    width: 100%;
 }

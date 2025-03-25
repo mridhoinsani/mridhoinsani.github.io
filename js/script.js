@@ -8,12 +8,14 @@ let kesempatan;
 let ans;
 function mulaiGame(){
     show('page2','page1')
+    show('page2','page3')
     kesempatan = 10;
     ans = Math.floor(Math.random() * 100);
 }
 
 let outputScreen = document.getElementById("outputscreen")
 let textInfoo = document.getElementById("textInfo")
+let end;
 
 function display(num){
     outputScreen.value +=num
@@ -24,12 +26,12 @@ function del(){
 }
 
 function tebak(){
-    kesempatan--
     document.getElementById("sisaKesempatan").innerHTML = "sisa kesempatan = "+ kesempatan;
     if(kesempatan<1){
-        show('page3','page2')
-        document.getElementById("jawaban").innerHTML = "jawabannya adalah = " + ans
+        end=0
+        ending()
     }
+    kesempatan--
 
     let nilaiTebak = parseInt(outputScreen.value)
     console.log(ans)
@@ -40,10 +42,22 @@ function tebak(){
     }else if(nilaiTebak > ans){
         textInfoo.innerText= "kegedean";
     }else if(nilaiTebak == ans){
-        show('page4','page2')
-        document.getElementById("jawabanBenar").innerHTML = "jawabannya adalah = " + ans
+        end = 1
+        ending()
     }else{
         textInfoo.innerText= "kekecilan";
     }
     document.getElementById("outputscreen").value="";
+}
+
+function ending(){
+    show('page3','page2')
+    if(end == 1){
+        show('gambarBenar','gambarSalah')
+        document.getElementById("textInfoEnd").innerHTML = "Hore!! Jawabanmu Benar"
+    }else{
+        show('gambarSalah','gambarBenar')
+        document.getElementById("textInfoEnd").innerHTML = "Yahh Kesempatanmu Habis"
+    }
+    document.getElementById("jawaban").innerHTML = "jawabannya adalah = " + ans
 }

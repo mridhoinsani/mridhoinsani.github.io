@@ -8,40 +8,29 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- header -->
+    <header class="head">
+        <div class="text">
+            <h1>Tebak Angka</h1>
+            <h2>1 - 99</h2>
+        </div>
+    </header>
 
+        <!-- page 1 -->
     <div id="page1">
-        <header class="head">
-            <div class="text">
-                <h1>Tebak Angka</h1>
-                <h2>1 - 99</h2>
-            </div>
-        </header>
-    
         <div class="body">
             <main class="container">
                 <div class="info">
-                        <p class="textInfoPage1">klik mulai untuk bermain</p>
+                        <p class="textInfo">klik mulai untuk bermain</p>
                         <button href="#" onclick="mulaiGame()">MULAI !!</button>
                         <p>pastikan paham cara bermain</p>
                 </div>
             </main>
         </div>
-        
-    
-        <footer>
-            <p>Tebak Angka &copy; 2024, Informatics Team</p>
-        </footer>
     </div>
 
-    <!-- page 2 -->
+        <!-- page 2 -->
     <div id="page2">
-        <header class="head">
-            <div class="text">
-                <h1>Tebak Angka</h1>
-                <h2>1 - 99</h2>
-            </div>
-        </header>
-    
         <div class="body">
             <main class="container">
                 <div class="info">
@@ -66,72 +55,32 @@
                         <button onclick="display('3')">3</button>
                         <button onclick="display('0')">0</button>
                     </div>
-                    
                 </div>
-        
             </main>
         </div>
-        
-    
-        <footer>
-            <p>Tebak Angka &copy; 2024, Informatics Team</p>
-        </footer>
     </div>
 
     <!-- page 3 salah-->
     <div id="page3">
-        <header class="head">
-            <div class="text">
-                <h1>Tebak Angka</h1>
-                <h2>1 - 99</h2>
-            </div>
-        </header>
-    
         <div class="body">
             <main class="container">
                 <div class="info">
-                    <p class="textInfo" id="textInfo">Yah Jawabanmu SALAH</p>
+                    <p class="textInfoEnd" id="textInfoEnd"></p>
                 </div>
-                <div class="tombolGame">
-                    <img class="gambarSalah" src="asset/img/salah.jpg" alt="">
+                <div class="tombolGame" id="boxGambarEnd">
+                    <img class="gambar" id="gambarSalah" src="asset/img/salah.jpg" alt="">
+                    <img class="gambar" id="gambarBenar" src="asset/img/benar.jpeg" alt="">
                     <p id="jawaban"></p>
+                    <button onclick="mulaiGame()">Mulai Lagi</button>
                 </div>
-        
             </main>
         </div>
-        
-    
-        <footer>
-            <p>Tebak Angka &copy; 2024, Informatics Team</p>
-        </footer>
     </div>
 
-    <!-- page 4 benar -->
-    <div id="page4">
-        <header class="head">
-            <div class="text">
-                <h1>Tebak Angka</h1>
-                <h2>1 - 99</h2>
-            </div>
-        </header>
-    
-        <div class="body">
-            <main class="container">
-                <div class="infoPage4">
-                    <p class="textInfoPage4" id="textInfoPage4">hore!! Jawabanmu BENAR</p>
-                </div>
-                <div class="tombolGame">
-                    <img class="gambarBenar" src="asset/img/benar.jpg" alt="">
-                    <p id="jawabanBenar"></p>
-                </div>
-        
-            </main>
-        </div>
-        
-    
-        <footer>
-            <p>Tebak Angka &copy; 2024, Informatics Team</p>
-        </footer>
+    <!-- footer -->
+    <footer>
+        <p>Tebak Angka &copy; 2024, Informatics Team</p>
+    </footer>
 
 
     <script src="./js/script.js"></script>
