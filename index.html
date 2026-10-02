@@ -4,85 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tebak Angka</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Memory Call-Erdokzly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- header -->
-    <header class="head">
-        <div class="text">
-            <h1>Tebak Angka</h1>
-            <h2>1 - 99</h2>
-        </div>
-    </header>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-star"></i>Memory Match<i class="fas fa-star"></i></h1>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-label">Moves</div>
+                    <div class="stat-value" id="moves">0</div>
+                </div>
 
-        <!-- page 1 -->
-    <div id="page1">
-        <div class="body">
-            <main class="container">
-                <div class="info">
-                        <p class="textInfo">klik mulai untuk bermain</p>
-                        <button href="#" onclick="mulaiGame()">MULAI !!</button>
-                        <p>pastikan paham cara bermain</p>
+                <div class="stat">
+                    <div class="stat-label">Times</div>
+                    <div class="stat-value" id="time">0:00</div>
                 </div>
-            </main>
-        </div>
-    </div>
 
-        <!-- page 2 -->
-    <div id="page2">
-        <div class="body">
-            <main class="container">
-                <div class="info">
-                    <p class="textInfo" id="textInfo">Masukan Angka</p>
-                    <input type="number" placeholder="masukan angka" class="input" id="outputscreen">
-                    <p id="sisaKesempatan">sisa kesempatan = 10</p>
+                <div class="stat">
+                    <div class="stat-label">Matches</div>
+                    <div class="stat-value" id="matches">0/8</div>
                 </div>
-                <div class="tombolGame">
-                    <div class="operator">
-                        <button onclick="tebak()">TEBAK</button>
-                        <button onclick="del()">Del</button>
-                    </div>
-                    <div class="angka">
-                        <button onclick="display('7')">7</button>
-                        <button onclick="display('8')">8</button>
-                        <button onclick="display('9')">9</button>
-                        <button onclick="display('4')">4</button>
-                        <button onclick="display('5')">5</button>
-                        <button onclick="display('6')">6</button>
-                        <button onclick="display('1')">1</button>
-                        <button onclick="display('2')">2</button>
-                        <button onclick="display('3')">3</button>
-                        <button onclick="display('0')">0</button>
-                    </div>
-                </div>
-            </main>
+            </div>
+        </div>
+
+        <div class="game-board" id="gameBoard"></div>
+
+        <div class="controls">
+            <button class="btn" onclick="newGame()">
+                <i class="fas fa-redo"></i>New Game
+            </button>
         </div>
     </div>
 
-    <!-- page 3 salah-->
-    <div id="page3">
-        <div class="body">
-            <main class="container">
-                <div class="info">
-                    <p class="textInfoEnd" id="textInfoEnd"></p>
-                </div>
-                <div class="tombolGame" id="boxGambarEnd">
-                    <img class="gambar" id="gambarSalah" src="asset/img/salah.jpg" alt="">
-                    <img class="gambar" id="gambarBenar" src="asset/img/benar.jpeg" alt="">
-                    <p id="jawaban"></p>
-                    <button onclick="mulaiGame()">Mulai Lagi</button>
-                </div>
-            </main>
+    <div class="modal" id="winModal">
+        <div class="modal-content">
+            <h2><i class="fas fa-trophy"></i>You Win!<i class="fas fa-trophy"></i></h2>
+            <p>Moves: <span id="finalMoves"></span><br>Time: <span id="finalTime"></span></p>
+            <button class="btn" onclick="newGame()">Play Again</button>
         </div>
     </div>
 
-    <!-- footer -->
-    <footer>
-        <p>Tebak Angka &copy; 2024, Informatics Team</p>
-    </footer>
 
 
-    <script src="./js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
